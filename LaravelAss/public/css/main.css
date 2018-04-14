@@ -1,0 +1,482 @@
+/* ================
+* 	Global reset
+* =================
+*/
+* {
+    box-sizing: border-box;
+}
+
+.red {
+    color: #fe3c33;
+}
+
+@font-face {
+    font-family: Kingthings_Wrote;
+    src: url(../fonts/Kingthings_Wrote.ttf);
+}
+
+@font-face {
+    font-family: Caviar_Dreams;
+    src: url(../fonts/Caviar_Dreams_Bold.ttf);
+}
+
+@font-face {
+    font-family: comme;
+    src: url(../fonts/Comme-Medium.ttf);
+}
+
+html, body {
+    font-family: Caviar_Dreams;
+    margin:0;
+    padding: 0;
+}
+
+p {
+    font-family: comme;
+}
+
+/*.bg-img {
+    background-image: url("../img/background.jpg");
+    position: relative;
+    background-position: center;
+    background-size: contain;
+}
+*/
+/* ================
+* Style for Columns
+* =================
+*/
+.col-1 {width: 8.3333%;}
+.col-2 {width: 16.6666%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.3333%;}
+.col-5 {width: 41.6666%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.3333%;}
+.col-8 {width: 66.6666%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.3333%;}
+.col-11 {width: 91.6666%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* ================
+*   Style for Rows
+* =================
+*/
+.row:before, .row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+/* =====================
+* Style for Header START
+* ======================
+*/
+.page-header {
+    text-align: center;
+    width: 100%;
+}
+
+/*HERO SECTION STYLING*/
+.hero {
+    width: 100%;
+    height: 900px;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-heading {
+    left: 20px;
+    font-family: Caviar_Dreams;
+    position: relative;
+    font-size: 1em;
+    top: 260px;
+    transform: rotate(-6deg);
+    width: 30%;
+    margin: auto;
+}
+
+.hero-heading h1 {
+    font-family: Kingthings_Wrote;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*RED BOX STYLING*/
+
+.nav-box {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background-color: rgba(254,60,51,0.4);
+    bottom: 0;
+    z-index: 0; 
+}
+
+.box2 {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    background-color: rgba(254,60,51,0.6);
+    bottom: 0;
+    z-index: 1;
+}
+
+.intro-box {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-color: rgba(254,60,51,0.8);
+    bottom: 0;
+    z-index: 2;
+}
+
+/*NAVIGATION BAR STYLING*/
+
+.nav-bar {
+    margin: auto;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    overflow: auto;
+}
+
+.nav-bar li {
+    width: 25%;
+    float: left;
+}
+
+.nav-bar li>a {
+    display: block;
+    color: white;
+    padding: 10px 16px 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*.nav-bar li>a:active {
+    color: white;
+    font-weight: bold;
+}
+*/
+.nav-bar li>a:hover {
+    background-color: white;
+    color: #fe3c33;
+}
+
+/*INTRODUCTION SECTION STYLING*/
+
+.intro-text span {
+    text-align: center;
+    font-family: Caviar_Dreams;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    color: white;
+    padding: 0 30px 0 30px;
+}
+
+/* =====================
+* Style for Header END
+* ======================
+*/
+
+
+/* =====================
+* Style for Main Content
+* ======================
+*/
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.sub-heading {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    font-family: Caviar_Dreams;
+}
+
+/*SERVICES SECTION STYLING*/
+.service-icon {
+	width: 15%;
+	margin: auto;
+	display: block;
+}
+
+.services-article {
+    width: 25%;
+    text-align: justify;
+    line-height: 1.2;
+    font-size: 16px;;
+    font-family: Caviar_Dreams;
+}
+
+.services-article h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: Caviar_Dreams;
+}
+
+
+.read-more-box {
+    outline: solid 1px black;
+    width: 150px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 0;
+    font-family: Caviar_Dreams;
+}
+
+/*RECENT WORK SECTION STYLING*/
+
+.work-img {
+    outline: solid 1px black;
+    margin: auto;
+    display: block;
+    width: 95%;
+    height: 330px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 100%;
+  width: 95%;
+  opacity: 0.5;
+  background-color: #f9c490;
+}
+
+.overlay:hover {
+  opacity: 0;
+}
+
+
+
+.work-article p {
+    text-align: center;
+}
+
+/*.work-article a:hover {
+    opacity: 0.5;
+}*/
+
+/*CLIENT SECTION STYLING*/
+
+.client-icon {
+	position: relative;
+	display: block;
+    padding: 10px; 
+    margin: auto;
+}
+
+
+/* =====================
+*     Style for Footer
+* ======================
+*/
+
+.footer-distributed {
+    text-align: center;
+    height: 500px;
+    width: 100%;
+}
+
+.footer-left, 
+.footer-center,  
+.footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-1 {
+    background-color: #fe3c33;
+}
+
+.footer-2 {
+    background-color: #f1f1f1;
+}
+
+/* Footer left */
+
+.footer-left {
+    width: 20%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.footer-contact p {
+    line-height: 20px;
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.footer-contact h1 {
+    display: block;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+/* Footer Center */
+
+.footer-center {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-center h1 {
+    color: black;
+    vertical-align: middle;
+    margin-left: auto;
+	margin-right: auto;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#google-map {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+
+.footer-icons {
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-icons img {
+    display: inline-block;
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    padding: 0;
+    bottom: 5%;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+/* Footer Right */
+
+.footer-right {
+    width: 20%;
+    margin-top: 20px;
+}
+
+.footer-copyrights {
+    font-weight: normal;
+    margin: 0;
+    color: black;
+    font-size: 14px;
+    text-align: right;
+    font-family: comme;
+}
+
+/* Footer Styling END*/
+
+/* Media Query Styling*/
+
+@media only screen and (max-width: 1200px) {
+	[class*= "col-"] {
+		width: 100%;
+	}
+
+    body, .container {
+        width: 100%;
+    }
+
+    .hero-heading {
+        width: 100%;
+    }
+
+    img, 
+    .img-container, 
+    .overlay {
+        max-width: 300px;
+        max-height: 280px;
+        margin: auto;
+        display: block;
+    }
+
+    p, h1, span {
+        width: 400px;
+        font-size: 1em;
+        margin: auto;
+        padding: 10px;    
+    }
+
+    .hero {
+    	width: 100%;
+    	background-size: cover;
+    	background-position: center;
+    }
+
+    #google-map {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .footer-distributed {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .nav-bar li > a {
+        font-size: 0.8em;
+    }  
+
+    .hero-heading {
+        width: 100%;
+    }
+
+    .intro-text span {
+        font-size: 0.8em;
+    }
+
+    .footer-contact p, span, .footer-copyrights {
+        font-size: 0.8em;
+        width: 100%;
+    }
+
+    .footer-icons {
+        width: 30px;
+    }
+}
+
